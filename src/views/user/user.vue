@@ -23,7 +23,7 @@ const itemClick = () => {
   console.log("--------------");
 };
 export default {
-  name: "User",
+  name: "User"
   // created() {
   //   this.handle()
   // }
@@ -40,7 +40,6 @@ export default {
   //     console.log("--------------")
   //   }
 
-  }
 }
 </script>
 
