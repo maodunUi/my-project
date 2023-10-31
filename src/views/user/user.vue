@@ -1,44 +1,38 @@
 
 
 <template>
-  <div @click="itemClick">
+  <div>
     <h2>这是用户的第一页</h2>
+    <button @onclick="itemClick">点击</button>
   </div>
 
 </template>
 
 
 
-<script setup>
-import {hello} from "../../service/user/user";
+<script>
 
-const itemClick = () => {
-  hello()
-    .then(res => {
-      console.log(res)
-    })
-    .catch(err => {
-      console.log(err)
-    })
-  console.log("--------------");
-};
+// import {hello} from "service/user"
+
 export default {
-  name: "User"
+  name: "User",
   // created() {
   //   this.handle()
   // }
 
-  // methods: {
-  //   itemClick() {
-  //     // hello()
-  //     //   .then(res => {
-  //     //     console.log(res)
-  //     //   })
-  //     //   .catch(err => {
-  //     //     console.log(err)
-  //     //   })
-  //     console.log("--------------")
-  //   }
+  methods: {
+    itemClick() {
+      console.log("--------------")
+      // hello()
+      //   .then(res => {
+      //     console.log(res)
+      //   })
+      //   .catch(err => {
+      //     console.log(err)
+      //   })
+
+    }
+  }
 
 }
 </script>
