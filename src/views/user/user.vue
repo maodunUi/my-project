@@ -3,7 +3,7 @@
 <template>
   <div>
     <h2>这是用户的第一页</h2>
-    <button @onclick="itemClick">点击</button>
+    <button @click="itemClick">点击</button>
   </div>
 
 </template>
