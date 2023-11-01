@@ -12,24 +12,20 @@
 
 <script>
 
-// import {hello} from "service/user"
+import {hello} from "../../service/user"
 
 export default {
   name: "User",
-  // created() {
-  //   this.handle()
-  // }
-
   methods: {
     itemClick() {
       console.log("--------------")
-      // hello()
-      //   .then(res => {
-      //     console.log(res)
-      //   })
-      //   .catch(err => {
-      //     console.log(err)
-      //   })
+      hello()
+        .then(res => {
+          console.log(res)
+        })
+        .catch(err => {
+          console.log(err)
+        })
 
     }
   }
