@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <router-link to="/user">用户页</router-link>
+    <router-link to="/menu">用户页</router-link>
 
     <router-view></router-view>
    </div>
